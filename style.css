@@ -1,0 +1,24 @@
+body {
+  background-image: url(images/plantBackground.jpg);
+  /* height: fit-content; */
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title {
+  color: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
+
+.nav-link{
+    color: white;
+}
