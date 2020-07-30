@@ -1,10 +1,15 @@
-body {
+
+.plantBackground {
   background-image: url(images/plantBackground.jpg);
   /* height: fit-content; */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body {
+  position: static;
 }
 
 #title {
@@ -22,3 +27,21 @@ body {
 .nav-link{
     color: white;
 }
+
+#scrolly {
+  position: fixed;
+  right: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 25em;
+}
+
+.detail-view {
+  position: relative;
+  top: 10em;
+  margin: 0 auto;
+}
+
