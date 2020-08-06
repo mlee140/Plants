@@ -10,7 +10,7 @@
 
 .infoBackground {
   position: relative;
-  background: #5c97ff;
+  background: rgb(43, 211, 155);
   overflow: auto;
 }
 .infoBackground::before {
@@ -67,7 +67,7 @@ img {
   text-align: center;
   width: 60%;
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   border-style: ridge;
   border-width: 2px;
   background-color: #ffffe5;
@@ -77,4 +77,19 @@ img {
   position: relative;
   top: 10em;
   margin: 0 auto;
+  z-index: 10;
+  
+}
+
+.btn{
+  position: fixed;
+  bottom: 0;
+  right: 2em;
+
+}
+
+.card-img-top img{
+  position: relative;
+  height: 100%;
+  width: auto
 }

@@ -66,7 +66,7 @@ var listView = function (id, name, picture, location) {
     <a href="plantInfo.html?id=${id}">
         ${picture ? `<img src="${picture[0].url}">` : ``}
     </a>
-    <p> Indoor / Outdoor:    ${location}</p>
+    <p> Indoor / Outdoor: ${location}</p>
     `;
 };
 var listGroup = function (id, name) {
@@ -84,7 +84,7 @@ var detailView = function (picture, name, location, facts, temp, sun) {
     <div class="card mt-5" style="max-width: 600px;">
         <div class="row no-gutters">
             <div class="col-md-4 card-img-top ">
-                ${picture ? `<img src="${picture[0].url}">` : ``}
+                ${picture ? `<img style="display:flex; align-items:center;" src="${picture[0].url}">` : ``}
             </div>
             <div class="col-md-8">
                 <div class="card-body">
