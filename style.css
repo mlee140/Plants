@@ -1,11 +1,33 @@
-
 .plantBackground {
+  background-image: url(images/plantBackground.jpg);
+
+  /* height: fit-content; */
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.infoBackground {
+  position: relative;
+  background: #5c97ff;
+  overflow: auto;
+}
+.infoBackground::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(images/plantBackground.jpg);
   /* height: fit-content; */
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.7;
 }
 
 body {
@@ -24,13 +46,14 @@ body {
   overflow: auto;
 }
 
-.nav-link{
-    color: white;
+.nav-link {
+  color: white;
 }
 
 #scrolly {
   position: fixed;
-  right: 0;
+  right: 1em;
+  margin-top: 5em;
 }
 
 img {
@@ -39,9 +62,19 @@ img {
   width: 25em;
 }
 
+.list-border {
+  position: relative;
+  text-align: center;
+  width: 60%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-style: ridge;
+  border-width: 2px;
+  background-color: #ffffe5;
+}
+
 .detail-view {
   position: relative;
   top: 10em;
   margin: 0 auto;
 }
-

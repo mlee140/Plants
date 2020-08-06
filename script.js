@@ -61,17 +61,18 @@ var getOneRecord = function (id) {
 
 var listView = function (id, name, picture, location) {
     return `
+    <div class="list-border">
     <h4 id="${id}">${name}</h4>
     <a href="plantInfo.html?id=${id}">
         ${picture ? `<img src="${picture[0].url}">` : ``}
     </a>
-    <p> ${location}</p>
+    <p> Indoor / Outdoor:    ${location}</p>
     `;
 };
 var listGroup = function (id, name) {
     return `
     <a class="list-group-item list-group-item-action" href="#${id}">${name}</a>
-    
+    </div>
     `;
 };
 
@@ -82,7 +83,7 @@ var detailView = function (picture, name, location, facts, temp, sun) {
     return `
     <div class="card mt-5" style="max-width: 600px;">
         <div class="row no-gutters">
-            <div class="col-md-4 ">
+            <div class="col-md-4 card-img-top ">
                 ${picture ? `<img src="${picture[0].url}">` : ``}
             </div>
             <div class="col-md-8">
