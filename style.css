@@ -28,6 +28,14 @@
   opacity: 0.7;
 }
 
+#createdBy {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  color: white;
+  text-align: end;
+}
+
 body {
   position: static;
 }
@@ -85,7 +93,7 @@ img {
 
 .btn{
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 2em;
 
 }
