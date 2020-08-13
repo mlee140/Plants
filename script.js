@@ -100,7 +100,7 @@ var detailView = function (picture, name, location, facts, temp, sun) {
                 </div>
             </div>
         </div>
-        <a href="plantInfo.html" style="right: 6.6em;" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">BACK</a>
+        <a href="plantInfo.html" style="right: 6.6em;" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">BACK</a>
 
   </div>
     `;

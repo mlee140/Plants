@@ -50,8 +50,8 @@ body {
 
 #scrolly {
   position: fixed;
-  right: 1em;
-  margin-top: 5em;
+  right: 7em;
+  margin-top: 10%;
 }
 
 img {
@@ -64,8 +64,8 @@ img {
   position: relative;
   text-align: center;
   width: 60%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   border-style: ridge;
   border-width: 2px;
   background-color: #ffffe5;
