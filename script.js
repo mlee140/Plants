@@ -81,16 +81,18 @@ var listGroup = function (id, name) {
 //NEED TO CHANGE, IVAN'S CODE
 var detailView = function (picture, name, location, facts, temp, sun) {
     return `
-    <div class="card mt-5" style="max-width: 600px;">
+    <div class="card mt-5" style="max-width: 63em; height: 30em;">
         <div class="row no-gutters">
             <div class="col-md-4 card-img-top ">
-                ${picture ? `<img style="display:flex; align-items:center;" src="${picture[0].url}">` : ``}
+                ${picture ? `<img src="${picture[0].url}">` : ``}
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                <h5 class="card-title">${name}</h5>
+                <h5 style=" font-family: 'Inconsolata', monospace; font-size:2.5em; font-weight:700;"class="card-title">${name}</h5>
                 <p class="card-text">${facts}</p>
-                <p class="card-text"><small class="text-muted">${location}</small></p>
+                <p class="card-text"> <h5 style=" font-size:.93em; font-weight:640;" >Suitable Temerature: </h5>${temp}</p>
+                <p class="card-text"> <h5 style="font-size:.93em; font-weight:640;" >Sun: </h5>${sun}</p>
+                <p class="card-text"><small class="text-muted"> <strong>Indoor / Outdoor:</strong> ${location}</small></p>
                 </div>
             </div>
         </div>
