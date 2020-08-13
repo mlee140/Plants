@@ -60,6 +60,9 @@ var getOneRecord = function (id) {
 //    <img src="${picture[0].url}">
 
 var listView = function (id, name, picture, location) {
+    $("body").css({
+        "--customBackground": `url("images/plantBackground.jpg")`,
+    }); 
     return `
     <div class="list-border">
     <h4 id="${id}">${name}</h4>
@@ -77,11 +80,12 @@ var listGroup = function (id, name) {
 };
 
 
-
-//NEED TO CHANGE, IVAN'S CODE
 var detailView = function (picture, name, location, facts, temp, sun) {
+    $("body").css({
+        "--customBackground": `url("${picture[1].url}")`,
+    });
     return `
-    <div class="card mt-5" style="max-width: 63em; height: 30em;">
+    <div class="card mt-5" style="max-width: 63em; height: 30em; background: #ffffe5;">
         <div class="row no-gutters">
             <div class="col-md-4 card-img-top ">
                 ${picture ? `<img src="${picture[0].url}">` : ``}
@@ -96,6 +100,8 @@ var detailView = function (picture, name, location, facts, temp, sun) {
                 </div>
             </div>
         </div>
+        <a href="plantInfo.html" style="right: 6.6em;" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">BACK</a>
+
   </div>
     `;
 };
