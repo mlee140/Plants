@@ -38,7 +38,6 @@ var getAllRecords = function () {
     );
 };
 
-// NEED TO CHANGE, IVAN'S CODE
 var getOneRecord = function (id) {
     $.getJSON(
         `https://api.airtable.com/v0/appsO0HxAALW5nhV4/plantInfo/${id}?api_key=key8tBDjVn91KtW2a`,
